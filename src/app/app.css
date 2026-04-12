@@ -26,7 +26,7 @@ hr {
 .content {
   width: 800px;
 
-  background-color: #FFFFFF;
+  background-color: #e9ebed;
   border-radius: 9px;
   padding: 18px;
 
@@ -50,7 +50,7 @@ hr {
   height: 34px;
   cursor: pointer;
 
-  background-color: #F6F6F6;
+  background-color: #eeeeee;
 
   border: 2px solid #343434;
   border-radius: 17px;
@@ -67,7 +67,7 @@ hr {
 }
 
 .secondary {
-  opacity: 0.5;
+  background-color: #d4d4d4;
 }
 
 .image {

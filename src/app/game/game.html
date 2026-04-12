@@ -1,0 +1,43 @@
+<div id="game-container">
+  @if (gameState === 'playing') {
+    <div class="game-card">
+      <p class="question-counter">Round {{ questionNumber }} of 10</p>
+      <div class="image-container">
+        <img [src]="currentImage.url" [alt]="'Image ' + questionNumber" class="game-image" />
+      </div>
+      <p class="prompt">Is this a dormitory or a prison?</p>
+      <div class="guess-buttons">
+        <button class="button button-question" (click)="makeGuess('dorm')">Dormitory<br><span class="emoji">🇺🇸</span></button>
+        <button class="button button-question" (click)="makeGuess('prison')">Prison<br><span class="emoji">🇪🇺</span></button>
+      </div>
+    </div>
+  } @else if (gameState === 'correct') {
+    <div class="game-card feedback correct">
+      <h2 class="feedback-title">Correct!</h2>
+      <div class="image-container">
+        <img [src]="currentImage.url" [alt]="'Image ' + questionNumber" class="game-image" />
+      </div>
+      <p class="feedback-subtitle">This is a {{ currentImage.type === 'dorm' ? 'dormitory' : 'prison' }}</p>
+      <button class="button" (click)="nextImage()">
+        {{ currentIndex >= 9 ? 'See Results' : 'Next' }}
+      </button>
+    </div>
+  } @else if (gameState === 'incorrect') {
+    <div class="game-card feedback incorrect">
+      <h2 class="feedback-title">Incorrect</h2>
+      <div class="image-container">
+        <img [src]="currentImage.url" [alt]="'Image ' + questionNumber" class="game-image" />
+      </div>
+      <p class="feedback-subtitle">This was a {{ currentImage.type === 'dorm' ? 'dormitory' : 'prison' }}</p>
+      <button class="button" (click)="nextImage()">
+        {{ currentIndex >= 9 ? 'See Results' : 'Next' }}
+      </button>
+    </div>
+  } @else if (gameState === 'complete') {
+    <div class="game-card results">
+      <h2 class="results-title">Game Over</h2>
+      <p class="score">You scored {{ score }} out of 10</p>
+      <button routerLink="/menu" class="button">Return to Menu</button>
+    </div>
+  }
+</div>

@@ -1,0 +1,103 @@
+#game-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+  padding: 20px;
+}
+
+.game-card {
+  width: 100%;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.question-counter {
+  font-size: 14px;
+  color: #888;
+  margin-bottom: 20px;
+}
+
+.image-container {
+  height: 350px;
+  overflow: hidden;
+  border-radius: 9px;
+  margin-bottom: 20px;
+  border: 1px solid #343434;
+}
+
+.game-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.prompt {
+  font-size: 18px;
+  color: #343434;
+  margin-bottom: 30px;
+}
+
+.guess-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+
+.guess-buttons .button {
+  min-width: 150px;
+}
+
+.feedback {
+  padding: 0px;
+}
+
+.feedback-title,
+.results-title {
+  font-size: 32px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  color: #343434;
+}
+
+.feedback.correct .feedback-title {
+  color: #2e7d32;
+}
+
+.feedback.incorrect .feedback-title {
+  color: #c62828;
+}
+
+.feedback-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.results .score {
+  font-size: 48px;
+  color: #343434;
+  margin-top: 20px;
+}
+
+.results-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+}
+
+.button-question {
+  height: 80px !important;
+}
+
+.emoji {
+  font-size: 24px;
+  line-height: 150%;
+  filter: drop-shadow(0px 0px 5px #f6f6f63f);
+}
