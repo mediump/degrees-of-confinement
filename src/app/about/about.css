@@ -1,0 +1,14 @@
+#about-container {
+  margin: 0px;
+  padding: 0px;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.disclaimer {
+  font-style: italic;
+  opacity: 0.75;
+}
