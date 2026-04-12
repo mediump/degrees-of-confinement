@@ -4,7 +4,7 @@
   font-weight: normal;
   src:
     local('PP Neue Montreal Book'),
-    url('/fonts/ppneuemontreal-book.woff') format('woff');
+    url('../../public/fonts/ppneuemontreal-book.woff') format('woff');
 }
 
 @font-face {
@@ -13,7 +13,7 @@
   font-weight: normal;
   src:
     local('PP Neue Montreal Italic'),
-    url('/fonts/ppneuemontreal-italic.woff') format('woff');
+    url('../../public/fonts/ppneuemontreal-italic.woff') format('woff');
 }
 
 @font-face {
@@ -22,7 +22,7 @@
   font-weight: normal;
   src:
     local('PP Neue Montreal Thin'),
-    url('/fonts/ppneuemontreal-thin.woff') format('woff');
+    url('../../public/fonts/ppneuemontreal-thin.woff') format('woff');
 }
 
 @font-face {
@@ -31,7 +31,7 @@
   font-weight: normal;
   src:
     local('PP Neue Montreal Medium'),
-    url('/fonts/ppneuemontreal-medium.woff') format('woff');
+    url('../../public/fonts/ppneuemontreal-medium.woff') format('woff');
 }
 
 @font-face {
@@ -40,7 +40,7 @@
   font-weight: normal;
   src:
     local('PP Neue Montreal SemiBold italic'),
-    url('/fonts/ppneuemontreal-semibolditalic.woff') format('woff');
+    url('../../public/fonts/ppneuemontreal-semibolditalic.woff') format('woff');
 }
 
 @font-face {
@@ -49,7 +49,7 @@
   font-weight: normal;
   src:
     local('PP Neue Montreal Bold'),
-    url('/fonts/ppneuemontreal-bold.woff') format('woff');
+    url('../../public/fonts/ppneuemontreal-bold.woff') format('woff');
 }
 
 hr {

@@ -1,5 +1,5 @@
 body {
-  background-image: url('/assets/grid-bg.svg');
+  background-image: url('../public/assets/grid-bg.svg');
   background-repeat: repeat;
   margin: 0px;
   padding: 24px;

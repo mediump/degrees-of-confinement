@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "github-build": "ng build --configuration production --base-href 'https://mediump.github.io/degrees-of-confinemenet/'"
+    "github-build": "ng build --configuration production --base-href 'https://mediump.github.io/degrees-of-confinement/'"
   },
   "private": true,
   "packageManager": "npm@11.6.2",
