@@ -113,6 +113,7 @@ hr {
 
   font-family: 'PP Neue Montreal Medium';
   font-size: 13px;
+  color: #343434;
 
   transition-property: background-color, color;
   transition-duration: 0.1s;
