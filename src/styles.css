@@ -1,5 +1,6 @@
 body {
-  background-color: #5e5e5e;
+  background-image: url('/assets/grid-bg.svg');
+  background-repeat: repeat;
   margin: 0px;
   padding: 24px;
 }
