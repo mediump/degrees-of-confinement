@@ -1,3 +1,57 @@
+@font-face {
+  font-family: 'PP Neue Montreal Book';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('PP Neue Montreal Book'),
+    url('/fonts/ppneuemontreal-book.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal Italic';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('PP Neue Montreal Italic'),
+    url('/fonts/ppneuemontreal-italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal Thin';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('PP Neue Montreal Thin'),
+    url('/fonts/ppneuemontreal-thin.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal Medium';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('PP Neue Montreal Medium'),
+    url('/fonts/ppneuemontreal-medium.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal SemiBold italic';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('PP Neue Montreal SemiBold italic'),
+    url('/fonts/ppneuemontreal-semibolditalic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal Bold';
+  font-style: normal;
+  font-weight: normal;
+  src:
+    local('PP Neue Montreal Bold'),
+    url('/fonts/ppneuemontreal-bold.woff') format('woff');
+}
+
 hr {
   display: block;
   height: 1px;
@@ -17,6 +71,7 @@ hr {
 }
 
 .logo {
+  font-family: 'PP Neue Montreal Bold';
   font-weight: 700;
   font-size: 32px;
   margin: 0px;
@@ -26,7 +81,7 @@ hr {
 .content {
   width: 800px;
 
-  background-color: #e9ebed;
+  background-color: #FFFFFF;
   border-radius: 9px;
   padding: 18px;
 
@@ -34,6 +89,7 @@ hr {
 }
 
 .subtitle {
+  font-family: 'PP Neue Montreal Book';
   max-width: 700px;
   text-align: center;
   font-size: 13px;
@@ -50,14 +106,15 @@ hr {
   height: 34px;
   cursor: pointer;
 
-  background-color: #eeeeee;
+  background-color: transparent;
 
   border: 2px solid #343434;
   border-radius: 17px;
 
+  font-family: 'PP Neue Montreal Medium';
   font-size: 13px;
 
-  transition-property: font-weight, background-color, color;
+  transition-property: background-color, color;
   transition-duration: 0.1s;
 }
 
@@ -66,8 +123,14 @@ hr {
   background-color: #343434;
 }
 
-.secondary {
-  background-color: #d4d4d4;
+.button-primary {
+  color: #eeeeee;
+  background-color: #346BF5 !important;
+  border: none;
+}
+
+.button-primary:hover {
+  background-color: #2E5CD2 !important;
 }
 
 .image {
