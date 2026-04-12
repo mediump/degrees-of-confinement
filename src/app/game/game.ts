@@ -103,7 +103,7 @@ export class Game {
     },
     {
       url: 'https://images.saymedia-content.com/.image/c_limit%2Ccs_srgb%2Cq_auto:eco%2Cw_700/MTc2MjQ4NTQ1NTg5MzM5NTYx/most-luxurious-prisons-in-the-world-that-let-you-wish-you-were-incarcerated.webp',
-      location: 'Sollentuna Prison, Sollentuna, Sweden',
+      location: 'Sollentuna Prison - Sollentuna, Sweden',
     },
   ];
 
@@ -122,8 +122,8 @@ export class Game {
     const shuffledPrisons = this.shuffleArray([...this.allPrisons]).slice(0, 5);
 
     const gameImages: GameImage[] = [
-      ...shuffledDorms.map((url) => ({ url, type: 'dorm' as const })),
-      ...shuffledPrisons.map((url) => ({ url, type: 'prison' as const })),
+      ...shuffledDorms.map((imageData) => ({ url: imageData.url, type: 'dorm' as const, location: imageData.location })),
+      ...shuffledPrisons.map((imageData) => ({ url: imageData.url, type: 'prison' as const, location: imageData.location })),
     ];
 
     this.gameImages = this.shuffleArray(gameImages);

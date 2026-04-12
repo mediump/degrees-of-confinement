@@ -84,6 +84,12 @@
   margin-bottom: 30px;
 }
 
+.feedback-note {
+  margin-top: -12px;
+  font-size: 11px;
+  font-family: 'PP Neue Montreal Italic';
+}
+
 .results .score {
   font-family: 'PP Neue Montreal Book';
   font-size: 48px;

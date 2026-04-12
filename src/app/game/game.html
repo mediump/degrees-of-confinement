@@ -17,7 +17,8 @@
       <div class="image-container">
         <img [src]="currentImage.url" [alt]="'Image ' + questionNumber" class="game-image" />
       </div>
-      <p class="feedback-subtitle">This is a {{ currentImage.type === 'dorm' ? 'dormitory' : 'prison' }}</p>
+      <p class="feedback-subtitle">This is a {{ currentImage.type === 'dorm' ? 'dormitory' : 'prison' }}.</p>
+      <p class="feedback-subtitle feedback-note">📍 {{ currentImage.location }}</p>
       <button class="button" (click)="nextImage()">
         {{ currentIndex >= 9 ? 'See Results' : 'Next' }}
       </button>
@@ -29,6 +30,7 @@
         <img [src]="currentImage.url" [alt]="'Image ' + questionNumber" class="game-image" />
       </div>
       <p class="feedback-subtitle">This is a {{ currentImage.type === 'dorm' ? 'dormitory' : 'prison' }}</p>
+      <p class="feedback-subtitle feedback-note">📍 {{ currentImage.location }}</p>
       <button class="button" (click)="nextImage()">
         {{ currentIndex >= 9 ? 'See Results' : 'Next' }}
       </button>
