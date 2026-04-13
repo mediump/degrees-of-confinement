@@ -34,7 +34,9 @@ This will compile your project and store the build artifacts in the `dist/` dire
 
 ## Additional Information
 
-This app was created with the Angular framework, TypeScript, and NodeJS. No political or social commentary is intended.
+This app was created with the Angular framework, TypeScript, and NodeJS. 
+
+No political or social commentary is intended.
 
 ## Screenshots
 
